@@ -21,7 +21,7 @@
   height: 400px;
   width: 400px;
   background: url('aj.png');
-
+  margin: auto;
   &.left {
     background: url('aj_left.png');
   }
@@ -40,29 +40,20 @@
 
   &.devil {
     background: url('aj_devil.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-animation: spin-spin 2s 1;
+  }
+
+  &.heart {
+    background: url('aj_heart.png');
+    -webkit-animation: rubber-band 2s 1;
   }
 }
 
-
-// .peeking {
-//   float: right;
-//   background: url('aj_peeking.png');
-//   background-position: 300px 0;
-//   background-repeat-x: no-repeat;
-//   position: absolute;
-//   right: 0px;
-//   top: 50px;
-//   height: 300px;
-//   width: 300px;
-//   background-size: 300px;
-//
-//   &.winking {
-//     background: url('aj_winking.png');
-//     background-repeat: no-repeat;
-//     height: 400px;
-//     background-size: 300px;
-//   }
-// }
+.black {
+  background-color: black;
+}
 
 .peeking {
   -webkit-animation: peek 2s 1;
@@ -80,26 +71,6 @@
   opacity: 0;
 }
 
-@-webkit-keyframes peek {
-  0% {
-    background-position-x: 300px;
-    // background: url('aj_peeking.png');
-    // background-size: 300px;
-    // background-repeat: no-repeat;
-    opacity: 1;
-  }
-
-  30% {
-    background-position-x: 140px;
-    opacity: 1;
-  }
-
-  100% {
-    background-position-x: 140px;
-    opacity: 0;
-  }
-
-}
 
 .winking {
   -webkit-animation: wink-appear 5s 1;
@@ -115,33 +86,4 @@
   width: 300px;
   background-size: 300px;
   opacity: 0;
-
-}
-
-
-@-webkit-keyframes wink-appear {
-  0% {
-    background-position-x: 300px;
-    opacity: 0;
-  }
-
-  12% {
-    background-position-x: 140px;
-    opacity: 0;
-  }
-
-  40% {
-    background-position-x: 140px;
-    opacity: 1
-  }
-
-  75% {
-    background-position-x: 0px;
-    opacity: 1;
-  }
-
-  100% {
-    background-position-x: 300px;
-    opacity: 1;
-  }
 }
