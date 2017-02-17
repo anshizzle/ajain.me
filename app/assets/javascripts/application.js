@@ -46,23 +46,4 @@ $("#main").ready(function() {
 
   outHereLooking();
 
-
-  $(document).click(function (e) {
-    let viewportWidth = document.body.clientWidth;
-    if (e.pageX >= viewportWidth * 2/3) {
-      let divs = [$("<div>", { 'class': 'peeking' }), $("<div>", { 'class': 'winking'} ) ];
-      $("body").append(divs);
-    }
-  });
-
-  $(".aj-bitmoji").click(function () {
-    $(".aj-bitmoji").addClass("spit");
-    let audio = new Audio('assets/spitting');
-    audio.play();
-    $(audio).bind('ended', function() {
-      $(".aj-bitmoji").removeClass("spit");
-      $(".aj-bitmoji").removeClass("right");
-      $(".aj-bitmoji").removeClass("left");
-    });
-  })
 })
