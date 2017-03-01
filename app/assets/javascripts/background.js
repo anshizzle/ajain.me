@@ -7,6 +7,7 @@
   * typedef cloud: { size: Integer, speed: Integer, x: Float, y: Float }
   */
 
+var CLOUD_IMG = 'assets/background/clound';
 /**
  * gives us the next animation frame
  */
