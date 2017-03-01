@@ -1,25 +1,44 @@
+%section.full-screen#splash
+  .text-center
 
-.row
-  .col-md-4.col-md-offset-4
-    .text-center
+    .aj-bitmoji
+    .main-text
+      %h1 My name is AJ
 
-      .aj-bitmoji
-      %h1 Hi, I'm AJ
--#
--# .row.headers
--#   .col-md-4.toggle-header{"data-toggle" => "#startups"}
--#     Startups
--#
--#   .col-md-4.toggle-header{"data-toggle" => "#hacks"}
--#     Hacks
--#
--#   .col-md-4.toggle-header{"data-toggle" => "#other"}
--#     Other
--#
--#
--#
--# .row.info
--#   .col-md-12
--#     = render :partial => 'application/startups'
--#     = render :partial => 'application/hacks'
--#     = render :partial => 'application/other'
+      %h3 Entrepreneur, Engineer, CTO-for-hire
+      %h3 Scroll down to see some things that I've built!
+
+      .h5
+        PS I left a few surprises for you. Let me know if you find them!
+        %span.glyphicon.glyphicon-sunglasses
+
+      .social{:style => "padding-top:30px;"}
+        = link_to "mailto: hi@ajain.me" do
+          .social-icon.mail
+        = link_to "https://github.com/anshizzle/" do
+          .social-icon.github
+        = link_to "https://www.facebook.com/anshul.jain" do
+          .social-icon.facebook
+        = link_to "https://www.linkedin.com/in/anshul-jain-0a0b6923/" do
+          .social-icon.linkedin
+        = link_to "https://soundcloud.com/mynameisaaj" do
+          .social-icon.soundcloud
+        = link_to "https://twitter.com/anshizzle24" do
+          .social-icon.twitter
+
+
+
+
+
+  .icon.down#scroll-to-projects
+
+%section#projects
+
+  - @projects.each do |p1, p2|
+    .project{"data-project-name" => slug_name(p1.fetch("name")) }
+      = logo_tag p1.fetch("name")
+    .project{"data-project-name" => slug_name(p2.fetch("name")) }
+      = logo_tag p2.fetch("name")
+
+    = render :partial => 'application/project_description', :locals => { :project => p1 }
+    = render :partial => 'application/project_description', :locals => { :project => p2 }

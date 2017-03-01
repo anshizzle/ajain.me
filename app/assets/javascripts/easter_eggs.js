@@ -1,13 +1,13 @@
-let runningEasterEgg = false
+let runningEasterEgg = false;
+let trollState = false;
 
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   if (runningEasterEgg) { return; }
+
   runningEasterEgg = true;
-  $(".aj-bitmoji").addClass("devil");
-  $("body").addClass('black');
-  let audio = new Audio('assets/evil_laugh');
-  audio.play();
-  $(audio).bind('ended', clearEggs);
+  trollState = true;
+
+  setTimeout(clearEggs, 5000);
 });
 
 
@@ -65,5 +65,6 @@ function clearEggs() {
 
   $('body').removeClass('black');
 
+  trollState = false;
   runningEasterEgg = false;
 }

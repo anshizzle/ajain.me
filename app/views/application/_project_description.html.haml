@@ -1,0 +1,16 @@
+.project-description{:class => slug_name(project.fetch("name")) }
+  -# %h1= project.fetch("name")
+
+  .tagline
+    = project.fetch("tagline")
+  .links
+    - (project.fetch("link").is_a?(Array) ? project.fetch("link") : [project.fetch("link")]).each do |link|
+      = link_to link do
+        %span.glyphicon.glyphicon-link
+
+  - if project.key?("technologies")
+    .tech
+      Technologies:
+      = project.fetch("technologies").join(', ')
+
+  .description= project.fetch("description").html_safe

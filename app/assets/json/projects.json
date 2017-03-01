@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Capyx",
+    "role": "Co-founder, CTO",
+    "link": ["https://www.capyx.com", "https://demo.capyx.com"],
+    "technologies": ["Ruby-on-Rails", "Vue.js"],
+    "tagline": "Captable management for private and public companies",
+    "description": "Captable management platform allowing private and public companies to manage their equity and handle all signatures/accounting requirements.<p>We built a rails application that featured an approve-accept process for equity, detailed reporting, and provided an auditable ASC 718 and ASC 505-50 report."
+  },
+  {
+    "name": "Shnack",
+    "role": "Co-founder, CTO",
+    "link": "https://shnackapp.herokuapp.com",
+    "tagline": "Skip the line for food at concerts and stadiums",
+    "technologies": ["Ruby-on-Rails", "Objective-C"],
+    "description": "An application that allows people to order food from their phone and skip the line at concerts and stadiums. We ultimately pivoted to focusing on coffee shops.<p>We built a web application, an iPhone application and an iPad application (which allowed restaurants to receive orders). Users would also be texted notifications as their order was being prepared and when it was ready."
+  },
+  {
+    "name": "SB Hacks",
+    "link": "http://www.sbhacks.com",
+    "tagline": "Make Waves.",
+    "role": "Co-founder, Director of Sponsorships",
+    "description": "We organized UCSB's first annual hackathon with a team of 15 students, bringing in over 550+ attendees and raising over $90K in sponsorships."
+  },
+  {
+    "name": "Netbin",
+    "technologies": ["Python"],
+    "tagline": "Command Line file-sharing utility over LAN.",
+    "description": "With netbin, devices on the same subnet can upload and download files using the netbin client. We built the full utility in python, managing direct TCP and UDP connections between clients, and managing an IP table that maintains a list of all active clients and a file table uploaded files.",
+    "link": "https://github.com/anshizzle/netbin"
+  },
+  {
+    "name": "Spritzify",
+    "technologies": ["Javascript", "Spritz API", "Objective-C", "Ruby-on-Rails"],
+    "tagline": "Highlight any text on the web, right click, and Spritz!",
+    "description": "We built a chrome extension and iOS app that allowed users to spritz various blocks of text anywhere on the web. Both of these apps would then send a message to our analytics backend (linked).",
+    "link": [
+      "https://spritz-it.herokuapp.com", "https://chrome.google.com/webstore/detail/spritzify/fceffhfbpdmobooodincobcfofgffngj"],
+    "accomplishments": "First Place at LA Hacks 2014 for the Spritz API Prize"
+  },
+  {
+    "name": "WeWrite",
+    "tagline": "Collaborative, line-by-line storytelling",
+    "technologies": ["Ruby-on-Rails"],
+    "description": "Built at the Product Hunt Hackathon, we built a rails app tht allowed people to write a story one line at a time, and also allowed users to branch a story at any point, so stories would go in multiple directions.",
+    "link": "https://wewrite-ph.herokuapp.com"
+  }
+]

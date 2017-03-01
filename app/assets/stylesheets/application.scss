@@ -20,7 +20,7 @@
 
  body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f9f9f9;
+  background-color: rgba(256, 256, 256, 0);
   font-size: 25px;
   &:before {
     box-shadow: 0 0 17px rgba(0,0,0,.7);
@@ -45,34 +45,34 @@
 .aj-bitmoji {
   height: 300px;
   width: 300px;
-  background: url('aj.png');
+  background: url('bitmoji/aj.png');
   background-size: 300px !important;
   margin: auto;
   &.left {
-    background: url('aj_left.png');
+    background: url('bitmoji/aj_left.png');
   }
 
   &.right {
-    background: url('aj_right.png');
+    background: url('bitmoji/aj_right.png');
   }
 
   &.spit {
-    background: url('aj_spit.png');
+    background: url('bitmoji/aj_spit.png');
   }
 
   &.wink {
-    background: url('aj_winking.png');
+    background: url('bitmoji/aj_winking.png');
   }
 
   &.devil {
-    background: url('aj_devil.png');
+    background: url('bitmoji/aj_devil.png');
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-animation: spin-spin 2s 1;
   }
 
   &.heart {
-    background: url('aj_heart.png');
+    background: url('bitmoji/aj_heart.png');
     -webkit-animation: rubber-band 2s 1;
   }
 }
@@ -83,7 +83,7 @@
   left: 50px;
   height: 200px;
   width: 200px;
-  background: url('aj_popup.png');
+  background: url('bitmoji/aj_popup.png');
   background-size: 200px;
   background-position: center 200px;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 .peeking {
   -webkit-animation: peek 2s 1;
   float: right;
-  background: url('aj_peeking.png');
+  background: url('bitmoji/aj_peeking.png');
   background-position-y: 0px;
   background-position-x: 300px;
   background-repeat-x: no-repeat;
@@ -119,7 +119,7 @@
 .winking {
   -webkit-animation: wink-appear 5s 1;
   float: right;
-  background: url('aj_winking.png');
+  background: url('bitmoji/aj_winking.png');
   background-position-y: 0px;
   background-position-x: 300px;
   background-repeat-x: no-repeat;
@@ -130,4 +130,25 @@
   width: 300px;
   background-size: 300px;
   opacity: 0;
+}
+
+.superman {
+  background: url('bitmoji/aj_superman.png');
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat-x: no-repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+  opacity: 1  ;
+}
+
+.floating {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-ease-out;
 }

@@ -1,0 +1,130 @@
+.full {
+  height: 100%;
+}
+
+
+canvas {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background-color: #D2E4E9;
+}
+
+
+section {
+  height: 100vh;
+  &#projects {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+
+  &#splash {
+    .icon.down {
+      margin: auto;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.main-text {
+  width: 50%;
+  padding: 50px 50px 20px 50px;
+  background-color: rgba(256, 256, 256, 0.5);
+  margin: auto;
+}
+
+.project {
+  width: 45%;
+  float: left;
+  height: 300px;
+  background-color: rgba(256, 256, 256, 0.5);
+  margin: 2%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(256, 256, 256, 0.7);
+  }
+
+  &.selected {
+    background-color: rgba(256, 256, 256, 1);
+
+    &:hover {
+      background-color: rgba(256, 256, 256, 1);
+
+    }
+  }
+
+  img {
+    margin: auto;
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  .logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    font-weight: bold;
+  }
+}
+
+.project-description {
+  padding: 25px;
+  width: 94%;
+  float: left;
+  height: 400px;
+  background-color: rgba(256, 256, 256, 1);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: .7em;
+
+  .tagline {
+    font-size: 1.1em;
+    padding-bottom: 5px;
+  }
+
+
+  .description {
+    padding-top: 15px;
+    text-align: left;
+    p {
+      padding-top: 15px;
+    }
+  }
+}
+
+.links a:hover, .social a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    height: 40vw;
+
+    .logo {
+      font-size: 24px;
+    }
+  }
+
+  section#projects {
+    width: 90%;
+  }
+
+  .main-text {
+    width: 90%;
+  }
+
+  .popping-up {
+    display: none;
+  }
+
+}
