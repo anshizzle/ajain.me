@@ -17,7 +17,7 @@
 
 function outHereLooking() {
   $(document).mousemove(function(e) {
-    let viewportWidth = document.body.clientWidth;
+    var viewportWidth = document.body.clientWidth;
 
     if (e.pageX < viewportWidth/2) {
       $(".aj-bitmoji").addClass("left");

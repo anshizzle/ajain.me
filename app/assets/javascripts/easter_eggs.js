@@ -1,5 +1,5 @@
-let runningEasterEgg = false;
-let trollState = false;
+var runningEasterEgg = false;
+var trollState = false;
 
 cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
   if (runningEasterEgg) { return; }
@@ -26,7 +26,7 @@ function spitAtEm() {
     runningEasterEgg = true;
 
     $(".aj-bitmoji").addClass("spit");
-    let audio = new Audio('assets/spitting');
+    var audio = new Audio('assets/spitting');
     audio.play();
     $(audio).bind('ended', clearEggs);
   })
@@ -36,10 +36,10 @@ function peekAndWink() {
   $(document).click(function (e) {
     if (runningEasterEgg) { return; }
 
-    let viewportWidth = document.body.clientWidth;
+    var viewportWidth = document.body.clientWidth;
     if (e.pageX >= viewportWidth * 2/3) {
       runningEasterEgg = true;
-      let divs = [$("<div>", { 'class': 'peeking' }), $("<div>", { 'class': 'winking'} ) ];
+      var divs = [$("<div>", { 'class': 'peeking' }), $("<div>", { 'class': 'winking'} ) ];
       divs[1].bind("webkitAnimationEnd", function() {
         $('.peeking').remove();
         $('.winking').remove();

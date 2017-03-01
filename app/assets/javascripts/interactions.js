@@ -4,12 +4,12 @@ $(function() {
   $(".project-description").hide();
 
   $(".project").click(function(e) {
-    let target;
+    var target;
     if ($(e.target).hasClass("project")) { target = $(e.target); }
     else { target = $(e.target).parent(); }
 
-    let p = target.data("project-name");
-    let description_element = $(".project-description." + p)
+    var p = target.data("project-name");
+    var description_element = $(".project-description." + p)
 
     $(".project-description").slideUp(300);
     if (target.hasClass("selected")) {

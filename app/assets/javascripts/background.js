@@ -32,8 +32,8 @@ function generateCloud() {
  * @return an array of cloud objects based on the size of the screen
  */
 function generateClouds () {
-  let arr = [];
-  let i = 0;
+  var arr = [];
+  var i = 0;
 
   for (i; i < 15; i++) { arr.push(generateCloud()); }
 
@@ -47,8 +47,8 @@ function generateClouds () {
  * once it reaches the end of the page
  */
 function updateCloud(canvas, cloud) {
-  let height = canvas.height;
-  let width = canvas.width;
+  var height = canvas.height;
+  var width = canvas.width;
   if (!cloud.x || !cloud.y) {
     cloud.x = Math.randomFloatBetween(0, width);
     cloud.y = Math.randomFloatBetween(0, height);
@@ -65,7 +65,7 @@ function updateCloud(canvas, cloud) {
  * draws an individual cloud
  */
 function drawCloud (context, cloud) {
-  let img;
+  var img;
 
   if (trollState) {
     img = document.getElementById('background-troll' + cloud.troll);
@@ -97,19 +97,19 @@ function animate(clouds, canvas, context) {
 }
 
 $(function() {
-  let clouds = generateClouds();
+  var clouds = generateClouds();
 
-  let img = document.getElementById('background-cloud');
+  var img = document.getElementById('background-cloud');
   img.onload = function() {
-    let canvas = document.getElementById('splash-bg');
-    let context = canvas.getContext('2d');
+    var canvas = document.getElementById('splash-bg');
+    var context = canvas.getContext('2d');
 
     // Set the canvas height and width to match the height and width of the page
     // For some reason, if done before img.onload, the width of the canvas returns 100px.
     canvas.height = $(canvas).height();
     canvas.width = $(canvas).width();
     $(window).resize(function() {
-      let canvas = document.getElementById('splash-bg');
+      var canvas = document.getElementById('splash-bg');
 
       canvas.height = $(canvas).height();
       canvas.width = $(canvas).width();
