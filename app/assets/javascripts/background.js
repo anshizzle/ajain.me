@@ -7,7 +7,6 @@
   * typedef cloud: { size: Integer, speed: Integer, x: Float, y: Float }
   */
 
-var CLOUD_IMG = 'assets/background/cloud';
 /**
  * gives us the next animation frame
  */
@@ -119,7 +118,6 @@ $(function() {
     animate(clouds, canvas, context, img);
   }
 
-  img.src = CLOUD_IMG;
 
 
 })
