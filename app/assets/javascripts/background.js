@@ -7,7 +7,6 @@
   * typedef cloud: { size: Integer, speed: Integer, x: Float, y: Float }
   */
 
-let CLOUD_IMG = 'assets/background/cloud';
 /**
  * gives us the next animation frame
  */
