@@ -1,0 +1,35 @@
+.social-icon {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 35px;
+  height: 35px;
+}
+
+.twitter { background:image_url("icons/twitter.png") no-repeat; }
+.facebook {  background:image_url("icons/facebook.png") no-repeat; }
+.instagram { background:image_url("icons/instagram.png") no-repeat; }
+.linkedin { background:image_url("icons/linkedin.png") no-repeat; }
+.snapchat { background:image_url("icons/snapchat.png") no-repeat; }
+.github { background:image_url("icons/github.png") no-repeat; }
+.soundcloud { background:image_url("icons/soundcloud.png") no-repeat; }
+.mail { background:image_url("icons/mail.png") no-repeat; }
+
+
+.icon {
+  display: block;
+  position: relative;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+.down {
+  background-image: url(icons/down-gray.png);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+
+.down:hover {
+  background-image: url(icons/down.png);
+}

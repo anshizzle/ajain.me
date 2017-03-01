@@ -49,30 +49,30 @@
   background-size: 300px !important;
   margin: auto;
   &.left {
-    background: url('bitmoji/aj_left.png');
+    background: image_url('bitmoji/aj_left.png');
   }
 
   &.right {
-    background: url('bitmoji/aj_right.png');
+    background: image_url('bitmoji/aj_right.png');
   }
 
   &.spit {
-    background: url('bitmoji/aj_spit.png');
+    background: image_url('bitmoji/aj_spit.png');
   }
 
   &.wink {
-    background: url('bitmoji/aj_winking.png');
+    background: image_url('bitmoji/aj_winking.png');
   }
 
   &.devil {
-    background: url('bitmoji/aj_devil.png');
+    background: image_url('bitmoji/aj_devil.png');
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-animation: spin-spin 2s 1;
   }
 
   &.heart {
-    background: url('bitmoji/aj_heart.png');
+    background: image_url('bitmoji/aj_heart.png');
     -webkit-animation: rubber-band 2s 1;
   }
 }
@@ -83,7 +83,7 @@
   left: 50px;
   height: 200px;
   width: 200px;
-  background: url('bitmoji/aj_popup.png');
+  background: image_url('bitmoji/aj_popup.png');
   background-size: 200px;
   background-position: center 200px;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@
 .peeking {
   -webkit-animation: peek 2s 1;
   float: right;
-  background: url('bitmoji/aj_peeking.png');
+  background: image_url('bitmoji/aj_peeking.png');
   background-position-y: 0px;
   background-position-x: 300px;
   background-repeat-x: no-repeat;
@@ -119,7 +119,7 @@
 .winking {
   -webkit-animation: wink-appear 5s 1;
   float: right;
-  background: url('bitmoji/aj_winking.png');
+  background: image_url('bitmoji/aj_winking.png');
   background-position-y: 0px;
   background-position-x: 300px;
   background-repeat-x: no-repeat;
@@ -133,7 +133,7 @@
 }
 
 .superman {
-  background: url('bitmoji/aj_superman.png');
+  background: image_url('bitmoji/aj_superman.png');
   background-position-y: center;
   background-position-x: center;
   background-repeat-x: no-repeat;
