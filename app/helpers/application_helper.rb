@@ -2,7 +2,7 @@ module ApplicationHelper
 
   def logo_tag(project)
     if FileTest.exist?(Rails.root.join('app', 'assets', 'images', 'projects', "#{slug_name(project)}.png"))
-      image_tag "projects/#{slug_name(project)}", :class => "logo"
+      image_tag "projects/#{slug_name(project)}.png", :class => "logo"
     else
       content_tag(:div, project, :class => "logo")
     end
