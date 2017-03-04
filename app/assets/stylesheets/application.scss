@@ -42,18 +42,23 @@
   }
  }
 
+/* separate than hide b/c used to control displaying images through
+   easter egg animations */
+.hidden {
+  display: none;
+}
+
 .aj-bitmoji {
   height: 300px;
   width: 300px;
-  background: url('bitmoji/aj.png');
-  background-size: 300px !important;
   margin: auto;
-  &.left {
-    background: image_url('bitmoji/aj_left.png');
-  }
 
-  &.right {
-    background: image_url('bitmoji/aj_right.png');
+  img {
+    height: 300px;
+    width: 300px;
+    &.heart {
+      -webkit-animation: rubber-band 2s 1;
+    }
   }
 
   &.spit {
@@ -69,11 +74,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-animation: spin-spin 2s 1;
-  }
-
-  &.heart {
-    background: image_url('bitmoji/aj_heart.png');
-    -webkit-animation: rubber-band 2s 1;
   }
 }
 

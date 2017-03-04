@@ -20,19 +20,20 @@ function outHereLooking() {
     var viewportWidth = document.body.clientWidth;
 
     if (e.pageX < viewportWidth/2) {
-      $(".aj-bitmoji").addClass("left");
-      $(".aj-bitmoji").removeClass("right");
+      $(".aj-bitmoji img.forward").addClass("hide");
+      $(".aj-bitmoji img.right").addClass("hide");
+      $(".aj-bitmoji img.left").removeClass("hide");
     } else if(e.pageX == viewportWidth/2) {
-      $(".aj-bitmoji").removeClass("right");
-      $(".aj-bitmoji").removeClass("left");
+      $(".aj-bitmoji img.forward").removeClass("hide");
+      $(".aj-bitmoji img.right").addClass("hide");
+      $(".aj-bitmoji img.left").addClass("hide");
     } else {
-      $(".aj-bitmoji").removeClass("left");
-      $(".aj-bitmoji").addClass("right");
+      $(".aj-bitmoji img.forward").addClass("hide");
+      $(".aj-bitmoji img.right").removeClass("hide");
+      $(".aj-bitmoji img.left").addClass("hide");
     }
   })
 }
-
-
 
 $("#main").ready(function() {
   // $(".loading").hide();
@@ -45,5 +46,4 @@ $("#main").ready(function() {
   });
 
   outHereLooking();
-
 })

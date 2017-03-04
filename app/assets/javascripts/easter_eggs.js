@@ -14,7 +14,10 @@ cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
 cheet('shift , 3', function () {
   if (runningEasterEgg) { return; }
   runningEasterEgg = true;
-  $(".aj-bitmoji").addClass("heart");
+
+  // Hide all the normal bitmoji
+  hideBitmoji('norm');
+  $(".aj-bitmoji img.heart").removeClass("hidden");
   console.log("<3 you");
 
   setTimeout(clearEggs, 2000)
@@ -25,9 +28,11 @@ function spitAtEm() {
     if (runningEasterEgg) { return; }
     runningEasterEgg = true;
 
-    $(".aj-bitmoji").addClass("spit");
+    hideBitmoji('norm');
+    $(".aj-bitmoji img.spit").removeClass("hidden");
     var audio = new Audio('assets/spitting');
     audio.play();
+
     $(audio).bind('ended', clearEggs);
   })
 }
@@ -55,13 +60,35 @@ $(function() {
   peekAndWink();
 })
 
+let norm_bitmoji = ['forward', 'left', 'right']
+let ee_bitmoji   = ['spit', 'heart'];
+
+/**
+  @param norm_or_ee [String] 'norm' or 'easter_egg'
+*/
+function hideBitmoji(norm_or_ee) {
+  let arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
+
+  arr.forEach(function(class_name) {
+    $('.aj-bitmoji img.' + class_name).addClass('hidden');
+  });
+}
+
+/**
+  @param norm_or_ee [String] 'norm' or 'easter_egg'
+*/
+function showBitmoji(norm_or_ee) {
+  let arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
+
+  arr.forEach(function(class_name) {
+    $('.aj-bitmoji img.' + class_name).removeClass('hidden');
+  });
+}
+
 
 function clearEggs() {
-  $(".aj-bitmoji").attr("class").split(' ').forEach(function(class_name) {
-    if(class_name !== 'aj-bitmoji') {
-      $('.aj-bitmoji').removeClass(class_name);
-    }
-  });
+  showBitmoji('norm');
+  hideBitmoji('easter_egg');
 
   $('body').removeClass('black');
 
