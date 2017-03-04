@@ -60,14 +60,14 @@ $(function() {
   peekAndWink();
 })
 
-let norm_bitmoji = ['forward', 'left', 'right']
-let ee_bitmoji   = ['spit', 'heart'];
+var norm_bitmoji = ['forward', 'left', 'right']
+var ee_bitmoji   = ['spit', 'heart'];
 
 /**
   @param norm_or_ee [String] 'norm' or 'easter_egg'
 */
 function hideBitmoji(norm_or_ee) {
-  let arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
+  var arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
 
   arr.forEach(function(class_name) {
     $('.aj-bitmoji img.' + class_name).addClass('hidden');
@@ -78,7 +78,7 @@ function hideBitmoji(norm_or_ee) {
   @param norm_or_ee [String] 'norm' or 'easter_egg'
 */
 function showBitmoji(norm_or_ee) {
-  let arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
+  var arr = norm_or_ee == 'norm' ? norm_bitmoji : ee_bitmoji
 
   arr.forEach(function(class_name) {
     $('.aj-bitmoji img.' + class_name).removeClass('hidden');
