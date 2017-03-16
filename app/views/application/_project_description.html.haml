@@ -12,5 +12,12 @@
     .tech
       Technologies:
       = project.fetch("technologies").join(', ')
+  %hr
 
   .description= project.fetch("description").html_safe
+
+  %hr
+  - if project.key?("accomplishments")
+    %ul.accomplishments
+      - project.fetch("accomplishments").each do |accomplishment|
+        %li= accomplishment

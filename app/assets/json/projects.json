@@ -13,7 +13,11 @@
     "link": "https://shnackapp.herokuapp.com",
     "tagline": "Skip the line for food at concerts and stadiums",
     "technologies": ["Ruby-on-Rails", "Objective-C"],
-    "description": "An application that allows people to order food from their phone and skip the line at concerts and stadiums. We ultimately pivoted to focusing on coffee shops.<p>We built a web application, an iPhone application and an iPad application (which allowed restaurants to receive orders). Users would also be texted notifications as their order was being prepared and when it was ready."
+    "description": "An application that allows people to order food from their phone and skip the line at concerts and stadiums. We ultimately pivoted to focusing on coffee shops.<p>We built a web application, an iPhone application and an iPad application (which allowed restaurants to receive orders). Users would also be texted notifications as their order was being prepared and when it was ready.",
+    "accomplishments": [
+      "Semi-Finalist at UCSB's New Venture Competition",
+      "Finalist at University Mobile Challenge"
+    ]
   },
   {
     "name": "SB Hacks",
@@ -36,13 +40,13 @@
     "description": "We built a chrome extension and iOS app that allowed users to spritz various blocks of text anywhere on the web. Both of these apps would then send a message to our analytics backend (linked).",
     "link": [
       "https://spritz-it.herokuapp.com", "https://chrome.google.com/webstore/detail/spritzify/fceffhfbpdmobooodincobcfofgffngj"],
-    "accomplishments": "First Place at LA Hacks 2014 for the Spritz API Prize"
+    "accomplishments": ["First Place at LA Hacks 2014 for the Spritz API Prize"]
   },
   {
     "name": "WeWrite",
     "tagline": "Collaborative, line-by-line storytelling",
     "technologies": ["Ruby-on-Rails"],
-    "description": "Built at the Product Hunt Hackathon, we built a rails app tht allowed people to write a story one line at a time, and also allowed users to branch a story at any point, so stories would go in multiple directions.",
+    "description": "We built a rails app that allowed people to write a story one line at a time. Users could branch stories at any point, follow stories and find people to collaborate with.",
     "link": "https://wewrite-ph.herokuapp.com"
   }
 ]

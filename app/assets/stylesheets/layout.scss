@@ -79,7 +79,7 @@ section {
   padding: 25px;
   width: 94%;
   float: left;
-  height: 400px;
+  min-height: 400px;
   background-color: rgba(256, 256, 256, 1);
   margin-left: 2%;
   margin-right: 2%;
@@ -94,11 +94,14 @@ section {
 
 
   .description {
-    padding-top: 15px;
     text-align: left;
     p {
       padding-top: 15px;
     }
+  }
+
+  .accomplishments {
+    text-align: left;
   }
 }
 
