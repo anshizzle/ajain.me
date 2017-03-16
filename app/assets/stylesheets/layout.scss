@@ -106,6 +106,10 @@ section {
   text-decoration: none;
 }
 
+.footer {
+  padding-top: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .project {
     height: 40vw;
@@ -123,7 +127,7 @@ section {
     width: 90%;
   }
 
-  .popping-up {
+  #scroll-to-projects {
     display: none;
   }
 
