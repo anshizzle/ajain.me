@@ -119,7 +119,7 @@ $(function() {
   }
 
   $(window).scroll(function(e) {
-    let h = document.body.scrollTop;
+    var h = document.body.scrollTop;
     $('#splash-bg').css('top', '-' + h + 'px');
   });
 
