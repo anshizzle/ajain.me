@@ -6,6 +6,8 @@
     %meta{:property => "og:title", :content => "Hi I'm AJ"}
     %meta{:property => "og:description", :content => "I'm an Entrepeneur and Full-Stack Developer" }
     %meta{:property => "og:image", :content => image_url("bitmoji/aj.png") }
+    :javascript
+       var spittingSoundPath = "#{asset_path('spitting.wav')}";
     %title HI I'M AJ
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag  'application', 'data-turbolinks-track' => true

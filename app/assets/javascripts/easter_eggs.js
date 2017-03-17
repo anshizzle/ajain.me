@@ -33,7 +33,7 @@ function spitAtEm() {
 
     hideBitmoji('norm');
     $('.aj-bitmoji img.spit').removeClass('hidden');
-    var audio = new Audio('assets/spitting');
+    var audio = new Audio(spittingSoundPath);
     audio.play();
 
     $(audio).bind('ended', clearEggs);
