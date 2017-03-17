@@ -1,8 +1,12 @@
 !!!
 %html
   %head
-    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
-    %title HI IM AJ
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+
+    %meta{:property => "og:title", :content => "Hi I'm AJ"}
+    %meta{:property => "og:description", :content => "I'm an Entrepeneur and Full-Stack Developer" }
+    %meta{:property => "og:image", :content => image_url("bitmoji/aj.png") }
+    %title HI I'M AJ
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag  'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
