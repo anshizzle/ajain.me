@@ -1,4 +1,7 @@
 %section.full-screen#splash
+  .right
+    %span.easter-egg-number 5
+    %span.egg
   .text-center
 
     .aj-bitmoji
@@ -40,12 +43,12 @@
   .icon.down#scroll-to-projects
 
 %section#projects
+  .projects-container
+    - @projects.each do |p1, p2|
+      .project{"data-project-name" => slug_name(p1.fetch("name")) }
+        = logo_tag p1.fetch("name")
+      .project{"data-project-name" => slug_name(p2.fetch("name")) }
+        = logo_tag p2.fetch("name")
 
-  - @projects.each do |p1, p2|
-    .project{"data-project-name" => slug_name(p1.fetch("name")) }
-      = logo_tag p1.fetch("name")
-    .project{"data-project-name" => slug_name(p2.fetch("name")) }
-      = logo_tag p2.fetch("name")
-
-    = render :partial => 'application/project_description', :locals => { :project => p1 }
-    = render :partial => 'application/project_description', :locals => { :project => p2 }
+      = render :partial => 'application/project_description', :locals => { :project => p1 }
+      = render :partial => 'application/project_description', :locals => { :project => p2 }

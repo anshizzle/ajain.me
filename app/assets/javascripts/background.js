@@ -51,7 +51,7 @@ function updateCloud(canvas, cloud) {
   var width = canvas.width;
   if (!cloud.x || !cloud.y) {
     cloud.x = Math.randomFloatBetween(0, width);
-    cloud.y = Math.randomFloatBetween(0, height);
+    cloud.y = Math.randomFloatBetween(0, height-cloud.size);
   } else {
     cloud.x += cloud.speed;
 
@@ -118,6 +118,10 @@ $(function() {
     animate(clouds, canvas, context, img);
   }
 
+  $(window).scroll(function(e) {
+    let h = document.body.scrollTop;
+    $('#splash-bg').css('top', '-' + h + 'px');
+  });
 
 
 })
