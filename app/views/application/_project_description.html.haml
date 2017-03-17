@@ -16,8 +16,8 @@
 
   .description= project.fetch("description").html_safe
 
-  %hr
   - if project.key?("accomplishments")
+    %hr
     %ul.accomplishments
       - project.fetch("accomplishments").each do |accomplishment|
         %li= accomplishment
