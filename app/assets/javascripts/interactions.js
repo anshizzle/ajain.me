@@ -5,6 +5,8 @@ $(function() {
 
   $(".project").click(function(e) {
     var target;
+
+    // Get .project div, not the child.
     if ($(e.target).hasClass("project")) { target = $(e.target); }
     else { target = $(e.target).parent(); }
 

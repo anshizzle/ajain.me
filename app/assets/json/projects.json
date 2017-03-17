@@ -30,7 +30,7 @@
     "name": "Netbin",
     "technologies": ["Python"],
     "tagline": "Command Line file-sharing utility over LAN.",
-    "description": "With netbin, devices on the same subnet can upload and download files using the netbin client. We built the full utility in python, managing direct TCP and UDP connections between clients, and managing an IP table that maintains a list of all active clients and a file table uploaded files.",
+    "description": "Netbin is a utility that allows devices on the same subnet can upload and download files using the netbin client. We built the full utility in python, managing direct TCP and UDP connections between clients, and maintaining an IP table that keeps a list of all active clients and uploaded files.",
     "link": "https://github.com/anshizzle/netbin"
   },
   {

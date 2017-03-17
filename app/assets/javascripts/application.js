@@ -39,11 +39,5 @@ $("#main").ready(function() {
   // $(".loading").hide();
   $("#main").removeClass('hide');
 
-  // Toggle Panels
-  $(".toggle-header").click(function(e) {
-    $('.info > .col-md-12 > ul').hide();
-    $($(this).data("toggle")).show();
-  });
-
   outHereLooking();
 })
