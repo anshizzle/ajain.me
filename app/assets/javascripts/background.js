@@ -96,11 +96,6 @@ function animate(clouds, canvas, context) {
   });
 }
 
-function updateSplashBackgroundPosition() {
-  var h = document.body.scrollTop;
-  $('#splash-bg').css('top', '-' + h + 'px');
-}
-
 $(function() {
   var clouds = generateClouds();
 
@@ -122,14 +117,5 @@ $(function() {
 
     animate(clouds, canvas, context, img);
   }
-
-  $('body').scroll(function(e) {
-    updateSplashBackgroundPosition();
-  });
-
-  $('body').bind('touchmove', function(e) {
-    updateSplashBackgroundPosition();
-  })
-
 
 })
