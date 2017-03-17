@@ -4,8 +4,8 @@
     "role": "Co-founder, CTO",
     "link": ["https://www.capyx.com", "https://demo.capyx.com"],
     "technologies": ["Ruby-on-Rails", "Vue.js"],
-    "tagline": "Captable management for private and public companies",
-    "description": "Captable management platform allowing private and public companies to manage their equity and handle all signatures/accounting requirements.<p>We built a rails application that featured an approve-accept process for equity, detailed reporting, and provided an auditable ASC 718 and ASC 505-50 report."
+    "tagline": "Cap table management for private and public companies",
+    "description": "Cap table management platform allowing private and public companies to manage their equity and handle all signatures/accounting requirements.<p>We built a rails application that featured an approve-accept process for equity, detailed reporting, and provided an auditable ASC 718 and ASC 505-50 report."
   },
   {
     "name": "Shnack",
