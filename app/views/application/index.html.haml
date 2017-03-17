@@ -1,7 +1,12 @@
 %section.full-screen#splash
-  .right.easter-egg-counter
-    %span.easter-egg-number 5
-    %span.egg
+  .right.menu
+    %span
+      = link_to 'mailto:hi@ajain.me' do
+        Contact
+
+    .easter-egg-counter
+      %span.easter-egg-number 5
+      %span.egg
   .text-center
 
     .aj-bitmoji
@@ -23,7 +28,7 @@
           %span.glyphicon.glyphicon-sunglasses
 
         .social
-          = link_to "mailto: hi@ajain.me" do
+          = link_to "mailto:hi@ajain.me" do
             .social-icon.mail
           = link_to "https://github.com/anshizzle/" do
             .social-icon.github

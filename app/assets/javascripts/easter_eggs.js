@@ -42,7 +42,8 @@ function spitAtEm() {
 
 function peekAndWink() {
   $(document).click(function (e) {
-    if (runningEasterEgg) { return; }
+    if (runningEasterEgg) { return true; }
+    if (e.target.tagName === 'A') { return true; }
 
     var viewportWidth = document.body.clientWidth;
     if (e.pageX >= viewportWidth * 2/3) {
