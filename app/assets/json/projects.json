@@ -2,10 +2,13 @@
   {
     "name": "Capyx",
     "role": "Co-founder, CTO",
-    "link": ["https://www.capyx.com", "https://demo.capyx.com"],
+    "link": ["https://owner.cyndx.net", "https://demo.owner.cyndx.net"],
     "technologies": ["Ruby-on-Rails", "Vue.js"],
     "tagline": "Cap table management for private and public companies",
-    "description": "Cap table management platform allowing private and public companies to manage their equity and handle all signatures/accounting requirements.<p>We built a rails application that featured an approve-accept process for equity, detailed reporting, and provided an auditable ASC 718 and ASC 505-50 report."
+    "description": "Cap table management platform allowing private and public companies to manage their equity and handle all signatures/accounting requirements.<p>We built a rails application that featured an approve-accept process for equity, detailed reporting, and provided an auditable ASC 718 and ASC 505-50 report.",
+    "accomplishments": [
+      "Sold to Cyndx in January 2018"
+    ]
   },
   {
     "name": "Shnack",
